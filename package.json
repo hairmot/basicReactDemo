@@ -1,0 +1,10 @@
+{
+  "name": "",
+  "scripts": {
+	"test": "serve -s public"
+  },
+  "version": "",
+  "devDependencies": {
+    "serve": "^9.2.0"
+  }
+}
