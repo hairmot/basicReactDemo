@@ -1,7 +1,7 @@
 {
   "name": "",
   "scripts": {
-	"test": "serve -s public"
+    "test": "serve -s public"
   },
   "version": "",
   "devDependencies": {

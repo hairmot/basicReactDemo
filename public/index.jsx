@@ -2,13 +2,27 @@ const {render} = ReactDOM
 
 //components
 class App extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+				"Title": "My Panel",
+				"Options": [{
+					"href": "...",
+					"Label": "First Link"
+				}, {
+					"href": "...",
+					"Label": "Second Link"
+				}]
+			}
+	}
 
-	render() {	
+	render() {
+		var links = this.state.Options.map(a => <Link href={a.href} label={a.Label}></Link>)
+
 		return (
 			<div>
 				<SitsPanel title="My Panel">
-					<Link href="..." label="First Link"></Link>
-					<Link href="..." label="Second Link"></Link>
+					{links}
 				</SitsPanel>
 			</div>
 		)
